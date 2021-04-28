@@ -1,0 +1,41 @@
+{
+    "name": "nonogram",
+    "description": "",
+    "homepage": "https://github.com/josepedrodias/nonogram",
+    "license": "CC-BY-4.0",
+    "version": "0.0.1",
+    "type": "module",
+    "private": true,
+    "author": "José Pedro Dias <jose.pedro.dias@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/josepedrodias/nonogram"
+    },
+    "scripts": {
+        "run": "npx https-localhost",
+        "generate": "node --experimental-modules generate.mjs",
+        "solve": "node --experimental-modules solve.mjs",
+        "test": "tap"
+    },
+    "engines": {
+        "node": ">=12"
+    },
+    "dependencies": {
+        "eslint-plugin-import": "^2.22.1"
+    },
+    "devDependencies": {
+        "eslint": "^7.18.0",
+        "prettier": "^2.2.1",
+        "tap": "^14.11.0"
+    },
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 2,
+        "semi": true,
+        "singleQuote": true
+    },
+    "tap": {
+        "no-coverage": true,
+        "reporter": "specy"
+    }
+}
